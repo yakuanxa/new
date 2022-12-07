@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+
+    <meta name="description" content="yheduca">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body style="height:100vh;">
+
+
+    <video playsinline autoplay muted loop poster="">
+    <source src="d.mp4" type="video/webm">
+    <source src="d.mp4" type="video/mp4">
+  </video>
+
+    <div class="container">
+        <div class="wrap">
+
+            <img src="da.jpg">
+            <script>
+                $(document).ready(function() {
+                    
+                    var baseUrl = (window.location).href;
+                    var url = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+                    $("#x1 ").html(url);
+                    $('.wrap').click(function() {
+                        window.location.href = `in.html?gtda=${url}`;
+                    });
+                });
+            </script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
